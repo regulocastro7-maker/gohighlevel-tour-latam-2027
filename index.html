@@ -241,6 +241,12 @@
   }
   .video-caption{margin-top:14px;color:var(--smoke-dim);font-size:0.86rem;font-family:'Barlow Semi Condensed';letter-spacing:0.02em;}
   .video-caption strong{color:var(--smoke);}
+  .ig-link{
+    display:inline-flex;align-items:center;gap:6px;margin-top:18px;color:var(--ember);text-decoration:none;
+    font-family:'Barlow Semi Condensed';font-weight:600;font-size:0.9rem;letter-spacing:0.02em;
+    border-bottom:1px solid transparent;transition:border-color .2s ease;
+  }
+  .ig-link:hover{border-color:var(--ember);}
 
   /* ---------- valor estrategico ---------- */
   .value-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:56px;align-items:center;}
@@ -501,6 +507,7 @@
       <video controls playsinline preload="metadata" src="assets/tour-recap.mp4"></video>
     </div>
     <div class="video-caption" data-i18n="video-caption"><strong>Preview clip</strong> · USA leg — the full multi-city recap is in production.</div>
+    <a href="https://www.instagram.com/seed_sinergeticos?igsh=MWV4YnhheGZ5b29rag==&igsi=MWV4YnhheGZ5b29rag==" target="_blank" rel="noopener" class="ig-link" data-i18n="video-ig-link">More clips on Instagram · @seed_sinergeticos <span>→</span></a>
   </div>
 </section>
 
@@ -682,6 +689,7 @@
     'video-h2': `RESUMEN DE <span class="hl">LAS GIRAS</span>`,
     'video-p': `Un vistazo dentro de ediciones pasadas por Latinoamérica — la energía, el público y la comunidad que llega ciudad tras ciudad.`,
     'video-caption': `<strong>Clip de adelanto</strong> · Gira USA — el resumen completo multi-ciudad está en producción.`,
+    'video-ig-link': `Más clips en Instagram · @seed_sinergeticos <span>→</span>`,
     'valor-eyebrow': `Valor Estratégico`,
     'valor-h2': `VALOR PARA <span class="hl">LA MARCA</span>`,
     'value-1': `Incrementar reconocimiento de marca en México, Estados Unidos y Latinoamérica.`,
