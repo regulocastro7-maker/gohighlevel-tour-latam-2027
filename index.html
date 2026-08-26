@@ -210,6 +210,20 @@
   .cities-note{margin-top:32px;color:var(--smoke);max-width:70ch;font-size:0.98rem;}
   .cities-note strong{color:var(--paper);}
 
+  .xlsx-cta-wrap{margin-top:20px;}
+  .xlsx-cta{
+    display:inline-flex;align-items:center;gap:10px;border:1px solid var(--ember);border-radius:4px;
+    padding:13px 22px;text-decoration:none;color:var(--paper);background:rgba(255,29,61,0.08);
+    font-family:'Barlow Semi Condensed';font-weight:600;font-size:0.92rem;letter-spacing:0.03em;
+    transition:background .2s ease,transform .18s ease;
+  }
+  .xlsx-cta:hover{background:var(--ember);color:var(--void);transform:translateY(-2px);}
+  .xlsx-cta-ico{
+    display:flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;
+    background:var(--ember);color:var(--void);font-size:0.75rem;flex-shrink:0;
+  }
+  .xlsx-cta:hover .xlsx-cta-ico{background:var(--void);color:var(--ember);}
+
   /* ---------- investment / propuesta economica ---------- */
   .invest-card{
     max-width:640px;margin:8px auto 0;border:1px solid var(--ember);border-radius:8px;padding:52px 40px;text-align:center;
@@ -481,6 +495,13 @@
       <div class="stat-cell"><div class="num">+80,000</div><div class="lbl" data-i18n="stat-3-lbl">Total in-person impacts</div></div>
     </div>
 
+    <div class="xlsx-cta-wrap">
+      <a href="assets/tour-2027-numbers.xlsx" download="HighLevel-Sinergeticos-Tour-2027-Numbers.xlsx" class="xlsx-cta">
+        <span class="xlsx-cta-ico">⬇</span>
+        <span data-i18n="alcance-xlsx-cta">View the full numbers breakdown (.xlsx)</span>
+      </a>
+    </div>
+
     <div class="info-row">
       <div class="meta-chip"><span class="dot"></span><span data-i18n="info-countries">Mexico · USA · LATAM</span></div>
       <div class="meta-chip"><span class="dot"></span>Jorge Serratos + Manuel de León</div>
@@ -672,6 +693,7 @@
     'stat-2-lbl': `Asistentes por ciudad (prom.)`,
     'stat-3-lbl': `Total de impactos presenciales`,
     'info-countries': `México · USA · LATAM`,
+    'alcance-xlsx-cta': `Ver el desglose completo de números (.xlsx)`,
     'cities-note': `
       Esto convierte a <strong>Go High Level</strong> en una de las marcas con mayor exposición dentro
       de una gira de desarrollo personal, liderazgo y emprendimiento dirigida al mercado hispano
